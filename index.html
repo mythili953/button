@@ -6,8 +6,8 @@
     <title>Toggle Colour</title>
     <style>
         body{
-            background-color: green;
-            transition: background-color 0.5s ease;
+            background-color: rgb(49, 130, 227);
+            transition: background-color 0.2s ease;
         }
         .button{
             display: flex;
@@ -16,23 +16,23 @@
             align-items: center;
         }
         .button div{
-            border: 1px black solid;
+            border: 1px rgb(255, 255, 255) solid;
             padding: 20px;
             cursor: pointer;
-            border-radius: 10px;
-            background-color: grey;
+            border-radius: 50%;
+            background-color: rgb(255, 5, 5);
         }
     </style>
 </head>
 <body>
     <div class="button">
-        <div onclick="toggleBackgroundColor()">Click me!</div>
+        <div onclick="toggleBackgroundColor()">Toggle color</div>
     </div>
 </body>
 <script>
     function toggleBackgroundColor() {
         var body = document.body;
-        body.style.backgroundColor = body.style.backgroundColor === 'green' ? 'red' : 'green';
+        body.style.backgroundColor = body.style.backgroundColor === 'blue' ? 'violet' : 'blue';
     }
 </script>
 </html>
